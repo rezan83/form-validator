@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+$default-font = 'Raleway'
+$success-color = #4eff47
+$error-color  = #ff711f
+$button-color = #697fff
+
+*
+    box-sizing: border-box
+
+html 
+    line-height: 1.15
+    -webkit-text-size-adjust: 100%
+
+
+body
+    background-color: #e8e8e8
+    font-family: $default-font, sans-serif
+    display: flex
+    justify-content: center
+    align-items: center
+    min-height: 100vh
+    margin: 0
+    
+
+.container
+    background-color: #ffffff
+    width: 40vw
+    border-radius: 5px
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.3)
+
+.form
+    padding: 3vw 4vw
+    h2
+        text-align: center
+        margin: 0 0 2vw
+    .form-control
+        position: relative
+        margin-bottom: 2vw
+        padding-bottom: 2vw
+
+        label
+            display: block
+            margin-bottom: 1vw
+            color: #a8a8a8
+        input
+            display: block
+            width: 100%
+            border: 1px solid #c8c8c8
+            border-radius: 2px
+            padding: 10px
+            font-size: 1em
+            &:focus
+                outline: 0
+                border-color: #3b3b3b
+        small
+            color: $error-color
+            position: absolute
+            bottom: 0
+            left: 0
+            visibility: hidden
+    .form-control.success
+        input
+            border: 1px solid $success-color
+
+    .form-control.error
+        input
+            border: 1px solid $error-color
+        small
+            visibility: visible
+    button
+        cursor: pointer
+        color: #fff
+        background-color: $button-color
+        border: 2px solid $button-color
+        border-radius: 4px
+        padding: 10px
+        margin-top: 2vw
+        width: 100%
+
+
+            
+
