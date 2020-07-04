@@ -25,7 +25,6 @@ function showMessage(element, message) {
         ...state.inputStatus,
         [element.name]: state.validInput,
     };
-    console.log(state.validInput);
 }
 
 function checkEmailValid(email) {
